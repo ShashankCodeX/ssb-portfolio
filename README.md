@@ -22,4 +22,6 @@ All content lives in **`src/data/portfolio.ts`**. Resume PDF: `public/assets/Sha
 
 **Stack:** React 18, TypeScript, Vite 6, Tailwind CSS 4, Framer Motion 11, Lenis.
 
+🔗 **Live site:** https://shashank-ssb.netlify.app
+
 Design inspired by [Sushmita Dasari's Portfolio_series](https://github.com/Sushmitadasari/Portfolio_series). Content and branding are my own.
