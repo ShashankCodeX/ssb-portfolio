@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { achievements, certifications } from '../data/portfolio';
+import { achievements, certificationTotal, certifications } from '../data/portfolio';
 import { EASE, SectionHeading, Tilt } from './fx';
 import { RailButtons } from './Rail';
 
@@ -67,9 +67,9 @@ export default function Achievements() {
       <div className="mt-16">
         <div className="gutter mb-2 flex flex-wrap items-end justify-between gap-2">
           <h3 className="font-sans text-lg font-semibold text-bone sm:text-2xl">
-            Certified <span className="text-mist">· {certifications.length} credentials</span>
+            Certified <span className="text-mist">· {certificationTotal} credentials</span>
           </h3>
-          <p className="text-xs text-smoke">{issuers.slice(0, 6).join(' · ')} · +{issuers.length - 6} more</p>
+          <p className="text-xs text-smoke">{issuers.slice(0, 6).join(' · ')} · +{issuers.length - 6} more · {certifications.length} shown, full list on LinkedIn</p>
         </div>
         <div className="group/rail relative">
           <div ref={rail} className="rail gutter flex snap-x gap-3 overflow-x-auto py-5">

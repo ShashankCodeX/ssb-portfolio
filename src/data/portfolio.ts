@@ -252,12 +252,18 @@ export const achievements: Achievement[] = [
 
 export type Certification = { issuer: string; name: string; link?: string };
 
+/** Headline number shown on the site. 67 in total; the list below is a selection. */
+export const certificationTotal = '65+';
+
 export const certifications: Certification[] = [
   // Newest first
+  { issuer: 'NVIDIA', name: 'InfiniBand' },
+  { issuer: 'NVIDIA', name: 'AI for All' },
   { issuer: 'Google', name: 'Build with Gemini — Track 2: Platform IT Developer' },
   { issuer: 'OpenAI', name: 'OpenAI Technical Practitioner' },
   { issuer: 'HCLTech', name: 'L3 Dev Prompt Engineer' },
   { issuer: 'HCLTech', name: 'GEN AI for Tester' },
+  { issuer: 'HCLTech', name: 'GEN AI' },
   { issuer: 'HCLTech', name: 'Gen AI for .NET Developer (Level 3)' },
   { issuer: 'HCLTech', name: 'Gen AI for Java Developer (Level 3)' },
   { issuer: 'HCLTech', name: 'AI Software Engineer (Level 3)' },
@@ -267,6 +273,10 @@ export const certifications: Certification[] = [
   { issuer: 'HCLTech', name: 'Generative AI Concepts' },
   { issuer: 'HCLTech', name: 'AI for Business Leaders' },
   { issuer: 'Skillsoft', name: 'Using AI-powered Cloud Platforms for DevOps' },
+  { issuer: 'Skillsoft', name: 'AI Release Management for DevOps' },
+  { issuer: 'Skillsoft', name: 'Introduction to Using AI-powered DevOps' },
+  { issuer: 'Skillsoft', name: 'Responsible Use of AI' },
+  { issuer: 'Skillsoft', name: 'An Introduction to Generative AI Concepts' },
   { issuer: 'Skillsoft', name: 'Deep Learning and Neural Networks' },
   { issuer: 'Skillsoft', name: 'Artificial Intelligence & Machine Learning' },
   { issuer: 'Skillsoft', name: 'Harnessing the Disruption of Generative AI' },
@@ -645,7 +655,7 @@ export const introSlides: IntroSlide[] = [
   },
   {
     kicker: 'Certified',
-    title: `${certifications.length}+ Certifications`,
+    title: `${certificationTotal} Certifications`,
     lines: ['HCLTech · Google · OpenAI · IBM · Microsoft', 'Skillsoft · TechGig · European Open University'],
   },
   {
@@ -701,6 +711,6 @@ export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: s
   originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals`, palette: crimson },
   picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 highlights', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
-  moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
+  moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certificationTotal} Certifications`, palette: crimson },
   story: { nav: 'Resume', card: 'The Full Story', meta: 'Resume • View & download', palette: violet },
 };

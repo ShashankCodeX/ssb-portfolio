@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
-import { achievements, certifications, profile, projects, type ProfileId } from '../data/portfolio';
+import { achievements, certificationTotal, profile, projects, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
@@ -36,7 +36,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const chipY = useTransform(py, [-1, 1], [12, -12]);
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
-  const meta = ['2024 – Present', 'HCLTech', `${projects.length} Originals`, `${certifications.length}+ Certifications`];
+  const meta = ['2024 – Present', 'HCLTech', `${projects.length} Originals`, `${certificationTotal} Certifications`];
 
   const floating = [
     { text: 'Clifford Chance', sub: 'Enterprise AEM platform', pos: 'left-[4%] top-[62%]', depth: 1 },
