@@ -25,3 +25,7 @@ All content lives in **`src/data/portfolio.ts`**. Resume PDF: `public/assets/Sha
 🔗 **Live site:** https://shashank-ssb.netlify.app
 
 Design inspired by [Sushmita Dasari's Portfolio_series](https://github.com/Sushmitadasari/Portfolio_series). Content and branding are my own.
+
+## License
+
+The original source code is licensed under MIT; see [LICENSE](./LICENSE). The license excludes personal profile and portfolio content, contact details, the resume PDF, images, branding, and third-party assets or dependencies.
